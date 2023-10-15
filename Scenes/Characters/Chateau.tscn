@@ -1,0 +1,115 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/Characters/Chateau.gd" type="Script" id=1]
+[ext_resource path="res://Tileset.png" type="Texture2D" id=2]
+
+[sub_resource type="RectangleShape2D" id=4]
+size = Vector2( 64, 192 )
+
+[sub_resource type="TileSet" id=7]
+0/name = "Tileset.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Tileset.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 32, 0, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Tileset.png 2"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 64, 0, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Tileset.png 3"
+3/texture = ExtResource( 2 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 32, 32, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Tileset.png 4"
+4/texture = ExtResource( 2 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 160, 0, 160, 224 )
+4/tile_mode = 2
+4/autotile/icon_coordinate = Vector2( 0, 0 )
+4/autotile/tile_size = Vector2( 32, 32 )
+4/autotile/spacing = 0
+4/autotile/occluder_map = [  ]
+4/autotile/navpoly_map = [  ]
+4/autotile/priority_map = [  ]
+4/autotile/z_index_map = [  ]
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+
+[sub_resource type="FontFile" id=5]
+font_path = "res://BabaMediumPixels.ttf"
+
+[sub_resource type="FontFile" id=6]
+size = 25
+font_data = SubResource( 5 )
+
+[node name="Chateau" type="Area2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 4 )
+
+[node name="TileMap" type="TileMap" parent="."]
+z_index = 1
+tile_set = SubResource( 7 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PackedInt32Array( -327682, 4, 196612, -327681, 4, 196612, -393216, 4, 196612, -393215, 4, 196612, -262146, 4, 196612, -262145, 4, 196612, -327680, 4, 196612, -327679, 4, 196612, -196610, 4, 196612, -196609, 4, 196612, -262144, 4, 196612, -262143, 4, 196612, -131074, 4, 196612, -131073, 4, 196612, -196608, 4, 196612, -196607, 4, 196612, -65538, 4, 196612, -65537, 4, 196612, -131072, 4, 196612, -131071, 4, 196612, -2, 4, 196612, -1, 4, 196612, -65536, 4, 196612, -65535, 4, 196612, 65534, 4, 196612, 65535, 4, 196612, 0, 4, 196612, 1, 4, 196612, 131070, 4, 196612, 131071, 4, 196612, 65536, 4, 196612, 65537, 4, 196612, 196606, 4, 196612, 196607, 4, 196612, 131072, 4, 196612, 131073, 4, 196612, 262142, 4, 196612, 262143, 4, 196612, 196608, 4, 196612, 196609, 4, 196612, 327678, 4, 196612, 327679, 4, 196612, 262144, 4, 196612, 262145, 4, 196612, 393214, 4, 196612, 393215, 4, 196612, 327680, 4, 196612, 327681, 4, 196612 )
+
+[node name="Label" type="Label" parent="TileMap"]
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource( 6 )
+align = 1
+valign = 1
+
+[connection signal="body_entered" from="." to="." method="_on_Chateau_body_entered"]
