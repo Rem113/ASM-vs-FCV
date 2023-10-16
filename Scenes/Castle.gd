@@ -1,5 +1,17 @@
 extends StaticBody2D
 
-func _on_attack_area_body_entered(body):
-	if body is Character:
-		body.get_node("AnimatedSprite2D").play("Idle")
+class_name Castle
+
+@export var health: int = 1000 : set = set_health
+
+@onready var health_label: Label = $HealthLabel
+
+func _ready():
+	health_label.text = str(health)
+
+func take_damage(amount: float):
+	health -= amount
+
+func set_health(value: int):
+	health = value
+	health_label.text = str(health)

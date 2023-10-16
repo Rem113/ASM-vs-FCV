@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dwudfkpd3jc4x"]
+[gd_scene load_steps=6 format=3 uid="uid://dwudfkpd3jc4x"]
 
 [ext_resource type="Script" path="res://Scenes/Castle.gd" id="1_m261g"]
 [ext_resource type="Texture2D" uid="uid://c3cbk2wuxb54k" path="res://Assets/Tilemaps/Tileset.png" id="2_p5l3x"]
@@ -156,9 +156,6 @@ sources/1 = SubResource("TileSetAtlasSource_v6dsy")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sf8v4"]
 size = Vector2(127, 126)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yqp7a"]
-size = Vector2(26, 127)
-
 [node name="Castle" type="StaticBody2D"]
 script = ExtResource("1_m261g")
 
@@ -178,10 +175,10 @@ layer_1/tile_data = PackedInt32Array(-196610, 262145, 0, -131074, 262145, 1, -65
 position = Vector2(0.5, -64)
 shape = SubResource("RectangleShape2D_sf8v4")
 
-[node name="AttackArea" type="Area2D" parent="."]
-position = Vector2(77, -63.5)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
-shape = SubResource("RectangleShape2D_yqp7a")
-
-[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
+[node name="HealthLabel" type="Label" parent="."]
+offset_left = -23.0
+offset_top = -238.0
+offset_right = 23.0
+offset_bottom = -212.0
+horizontal_alignment = 1
+vertical_alignment = 1
