@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://8ycbgiwwvs8s"
-path="res://.godot/imported/BabaMediumPixels.ttf-43112bb0cc45d585b7778f9b22e5d129.fontdata"
+path="res://.godot/imported/BabaMediumPixels.ttf-b9d832b7cfada9eaca2104ba7db73fb7.fontdata"
 
 [deps]
 
-source_file="res://BabaMediumPixels.ttf"
-dest_files=["res://.godot/imported/BabaMediumPixels.ttf-43112bb0cc45d585b7778f9b22e5d129.fontdata"]
+source_file="res://Assets/Fonts/BabaMediumPixels.ttf"
+dest_files=["res://.godot/imported/BabaMediumPixels.ttf-b9d832b7cfada9eaca2104ba7db73fb7.fontdata"]
 
 [params]
 

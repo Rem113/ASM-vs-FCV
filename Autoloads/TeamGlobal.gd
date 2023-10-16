@@ -1,6 +1,6 @@
 extends Node
 
-enum TEAM{
+enum TEAM {
 	ASM,
 	VISITEUR
 }

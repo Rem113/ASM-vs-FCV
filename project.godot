@@ -10,14 +10,13 @@ config_version=5
 
 [application]
 
-config/name="Rogue lite tes de moi que j'arrive a le faire tt seule"
-run/main_scene="res://Scenes/Characters/Jeu.tscn"
+config/name="ASM vs FCV"
+run/main_scene="res://Scenes/Game.tscn"
 config/features=PackedStringArray("4.1")
-config/icon="res://icon.png"
 
 [autoload]
 
-TeamGlobal="*res://team_global.gd"
+TeamGlobal="*res://Autoloads/TeamGlobal.gd"
 
 [gui]
 

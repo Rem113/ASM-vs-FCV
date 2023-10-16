@@ -12,7 +12,7 @@ var count = 0
 var target_enemy = []
 
 func _ready():
-	$AnimatedSprite2D.play("Move_n")
+	$AnimatedSprite2D.play("Move")
 	if team == TeamGlobal.TEAM.VISITEUR:
 #		attack = 500
 		speed *= -1
@@ -36,7 +36,7 @@ func take_hit(damage: int):
 
 func move():
 	collision = false
-	$AnimatedSprite2D.play("Move_n")
+	$AnimatedSprite2D.play("Move")
 
 func _on_Area2D_body_entered(body):
 	if body == self:

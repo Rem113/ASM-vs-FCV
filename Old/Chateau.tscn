@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3]
 
-[ext_resource path="res://Scenes/Characters/Chateau.gd" type="Script" id=1]
-[ext_resource path="res://Tileset.png" type="Texture2D" id=2]
+[ext_resource type="Script" path="res://Old/Chateau.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://c3cbk2wuxb54k" path="res://Assets/Tilemaps/Tileset.png" id="2"]
 
 [sub_resource type="RectangleShape2D" id=4]
 size = Vector2( 64, 192 )

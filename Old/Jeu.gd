@@ -103,8 +103,9 @@ func _on_SpawnerTimer_timeout():
 func _on_Button_pressed():
 	if argent >= 50:
 		var character_asm = character_scene.instantiate()
-		character_asm.position.y = get_viewport_rect().size super.y - 120
-#		character_asm.position.y = get_viewport_rect().size.y/2
+		character_asm.get_node("AnimatedSprite2D").flip_h = true
+#		character_asm.position.y = get_viewport_rect().size super.y - 120
+		character_asm.position.y = get_viewport_rect().size.y/2
 		character_asm.get_node(".").attack *= (warrior_lvl*0.1+1)
 		character_asm.get_node(".").hp *= (warrior_lvl*0.2+1)
 		asm_spawn_queue.push_back(character_asm)
