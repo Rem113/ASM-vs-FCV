@@ -1,26 +1,26 @@
 [gd_scene load_steps=11 format=3 uid="uid://buu2f801el542"]
 
 [ext_resource type="Script" path="res://Scenes/Characters/Character.gd" id="1_rm10r"]
-[ext_resource type="Texture2D" uid="uid://bolmq8ge2qdeo" path="res://Assets/Sprites/Sprite-0002.png" id="2_nuusm"]
+[ext_resource type="Texture2D" uid="uid://bolmq8ge2qdeo" path="res://Assets/Sprites/Knight.png" id="2_lhrjy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8ky3k"]
-atlas = ExtResource("2_nuusm")
+atlas = ExtResource("2_lhrjy")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4vms2"]
-atlas = ExtResource("2_nuusm")
+atlas = ExtResource("2_lhrjy")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0c138"]
-atlas = ExtResource("2_nuusm")
+atlas = ExtResource("2_lhrjy")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pq16h"]
-atlas = ExtResource("2_nuusm")
+atlas = ExtResource("2_lhrjy")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_87xu4"]
-atlas = ExtResource("2_nuusm")
+atlas = ExtResource("2_lhrjy")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qrg47"]

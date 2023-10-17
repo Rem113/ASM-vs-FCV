@@ -28,3 +28,7 @@ func _on_spawn_area_fcv_body_exited(body):
 	if !spawn_queue_fcv.is_empty():
 		var new_character = spawn_queue_fcv.pop_front()
 		add_child(new_character)
+
+
+func _on_castle_asm_destroyed():
+	remove_child($CastleASM)
